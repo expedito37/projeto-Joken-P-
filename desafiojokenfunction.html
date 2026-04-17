@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link link rel="stylesheet" href="desafiojokenfunction.css">
+    <title>projeto</title>
+</head>
+
+<body>
+
+    <h1>JokenPô</h1>
+
+    <div class="joken">
+
+        <!--No on click todo mundo fica dentro do <>-->
+        <button id="rock" onclick="playhuman('rock')">&#x1F5FF;</button>
+        <button id="paper" onclick="playhuman('paper')">&#x1F4E6;</button>
+        <button id="scissors" onclick="playhuman('scissors')">&#x2702;</button>
+    </div>
+
+    <p class="result"></p>
+
+    <div class="conteaner">
+        <p class="my"><b>Minha pontuaçao:<span id="human-score">0</span></b></p>
+        <p class="machine"><b>pontuação da maquina:<span id="machine-score">0</span></b></p>
+    </div>
+
+    <script src="desafiojokenfunction.js"></script>
+
+</body>
+
+</html>

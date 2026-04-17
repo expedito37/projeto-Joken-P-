@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/jokenpo.png");
+  text-align: center;
+}
+
+.result {
+  padding: 52px;
+  font-size: 85px;
+  color: rgb(7, 7, 7);
+
+
+}
+
+#paper,
+#scissors,
+#rock {
+  padding: 52px;
+  font-size: 55px;
+  /*esse aumenta todo mundo no button, img etc..*/
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+
+}
+
+
+#rock {
+  background: blueviolet;
+}
+
+#paper {
+  background: rgb(77, 153, 5);
+}
+
+#scissors {
+  background: rgb(216, 40, 13);
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.joken {
+  display: flex;
+  justify-content: center;
+  /* centraliza horizontal */
+  gap: 25px;
+  /*para usar o gap tem que ter o [display:flex]*/
+  /* espaço entre os botões */
+
+}
+
+.conteaner {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.my,
+.machine {
+  text-align: center;
+  background-color: white;
+  margin: 33px;
+  font-size: 45px;
+  background: rgb(189, 233, 227);
+  opacity: 0.9;
+}
+
+.my span {
+  color: red;
+}
+
+h1 {
+  margin-top: 34px;
+  margin-bottom: 43px;
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  font-size: 55px;
+  font: 600;
+  opacity: 0.9;
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .joken {
+
+    align-items: center;
+  }
+
+  #paper,
+  #rock,
+  #scissors {
+    display: flex;
+    padding: 20px;
+    ;
+    font-size: 25px;
+  }
+
+
+
+}
